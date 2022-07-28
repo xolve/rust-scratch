@@ -1,0 +1,101 @@
+[package]
+name = "rust-scratch"
+version = "0.1.0"
+authors = ["ravi.arora"]
+edition = "2018"
+
+[dependencies]
+regex = "1.4.3"
+thiserror = "1.0"
+http = "0.2"
+peg = "0.7"
+bitvec = "0.22"
+rand = "0"
+pest = "2"
+pest_derive = "2"
+image = "0.23"
+num-complex = "0"
+serde = "1"
+serde_derive = "1"
+serde_json = "1"
+clap = "3"
+trust-dns-client = { version = "0", default-features = false }
+trust-dns-proto = "0"
+
+# For particles
+piston_window = "0"
+piston2d-graphics = "0"
+
+[[bin]]
+name = "ref_cycle"
+path = "src/ref_cycle.rs"
+
+
+[[bin]]
+name = "weak_ref_tree"
+path = "src/weak_ref_tree.rs"
+
+[[bin]]
+name = "bitvec_practice"
+path = "src/bitvec_practice.rs"
+
+
+[[bin]]
+name = "refcell_mistakes"
+path = "src/refcell_mistakes.rs"
+
+[[bin]]
+name = "pesto"
+path = "src/pesto.rs"
+
+[[bin]]
+name = "bodil_parser_combinator"
+path = "src/bodil_parser_combinator.rs"
+
+[[bin]]
+name = "fnmut_escape"
+path = "src/fnmut_escape.rs"
+
+[[bin]]
+name = "example_with_nice_names"
+path = "src/example_with_nice_names.rs"
+
+[[bin]]
+name = "dyn_question"
+path = "src/dyn_question.rs"
+
+[[bin]]
+name = "mandelbrot"
+path = "src/mandelbrot.rs"
+
+[[bin]]
+name = "file_rust_in_action"
+path = "src/file_rust_in_action.rs"
+
+[[bin]]
+name = "cubesat_example"
+path = "src/cubesat_example.rs"
+
+[[bin]]
+name = "chip8_partial_emu"
+path = "src/chip8_partial_emu.rs"
+
+[[bin]]
+name = "particles"
+path = "src/particles.rs"
+
+[[bin]]
+name = "fview"
+path = "src/fview.rs"
+
+[[bin]]
+name = "http_client"
+path = "src/http_client.rs"
+
+[[bin]]
+name = "scratch"
+path = "src/scratch.rs"
+
+[[bin]]
+name = "resolv"
+path = "src/resolv.rs"
