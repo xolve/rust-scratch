@@ -1,10 +1,11 @@
-#[macro_use]
-extern crate serde_json;
+use std::{fs::File, net::{Ipv6Addr}};
+use std::error::Error;
 
-fn main() {
-    let x = json!({
-        "hello": "world"
-    });
 
-    println!("{x:?}\n");
+fn main() -> Result<(), Box<dyn Error>> {    
+    let _f = File::open("/root/hello.txt")?;
+
+    let _i = "::1".parse::<Ipv6Addr>()?;
+
+    Ok(())
 }
