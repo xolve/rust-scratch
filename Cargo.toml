@@ -21,6 +21,7 @@ serde_json = "1"
 clap = "3"
 trust-dns-client = { version = "0", default-features = false }
 trust-dns-proto = "0"
+reqwest = { version = "0", features = ["blocking"] }
 
 # For particles
 piston_window = "0"
@@ -99,3 +100,11 @@ path = "src/scratch.rs"
 [[bin]]
 name = "resolv"
 path = "src/resolv.rs"
+
+[[bin]]
+name = "http_request"
+path = "src/http_request.rs"
+
+[[bin]]
+name = "error_common_type"
+path = "src/error_common_type.rs"
