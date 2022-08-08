@@ -108,3 +108,7 @@ path = "src/http_request.rs"
 [[bin]]
 name = "error_common_type"
 path = "src/error_common_type.rs"
+
+[[bin]]
+name = "mac_address_generator"
+path = "src/mac_address_generator.rs"
