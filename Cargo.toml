@@ -22,6 +22,7 @@ clap = "3"
 trust-dns-client = { version = "0", default-features = false }
 trust-dns-proto = "0"
 reqwest = { version = "0", features = ["blocking"] }
+chrono = "0"
 
 # For particles
 piston_window = "0"
@@ -112,3 +113,7 @@ path = "src/error_common_type.rs"
 [[bin]]
 name = "mac_address_generator"
 path = "src/mac_address_generator.rs"
+
+[[bin]]
+name = "chrono_time"
+path = "src/chrono_time.rs"
