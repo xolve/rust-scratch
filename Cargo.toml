@@ -23,6 +23,7 @@ trust-dns-client = { version = "0", default-features = false }
 trust-dns-proto = "0"
 reqwest = { version = "0", features = ["blocking"] }
 chrono = "0"
+byteorder = "1"
 
 # For particles
 piston_window = "0"
@@ -117,3 +118,7 @@ path = "src/mac_address_generator.rs"
 [[bin]]
 name = "chrono_time"
 path = "src/chrono_time.rs"
+
+[[bin]]
+name = "ntp_client"
+path = "src/ntp_client.rs"
